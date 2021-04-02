@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: #CED1D6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("back.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+body .location {
+  width: 400px;
+  height: 65px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .location .change {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .location .change .formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-left: 10px;
+  height: 120%;
+}
+
+body .location .change .formulaire .changeVal {
+  height: 100%;
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #313131;
+  border-radius: 16px 0px;
+  border-bottom: 3px solid #DF8E00;
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  padding: 5px 10px;
+}
+
+body .location .change .formulaire .changeVal:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+body .location .change .formulaire .error {
+  visibility: hidden;
+  color: red;
+}
+
+body .location .change .btn {
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  font-family: 'Cairo', sans-serif;
+  color: #313131;
+  overflow: hidden;
+  background-color: #eab676;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body .container {
+  width: 400px;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+body .container .city {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  background-image: url("bg.jpg");
+}
+
+body .container .city .cityName {
+  font-size: 1.8rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+body .container .city .temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .city .temp .num {
+  font-size: 2.5rem;
+  line-height: 80%;
+  font-weight: bolder;
+}
+
+body .container .city .temp .description {
+  padding-top: 5px;
+  font-size: 0.9rem;
+}
+
+body .container .weather {
+  width: 100%;
+  height: 70%;
+  background: white;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url("bg.jpg");
+  padding-bottom: 20px;
+}
+
+body .container .weather .dayel {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .weather .dayel .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .weather .dayel .icon img {
+  height: 36px;
+  width: 36px;
+}
+/*# sourceMappingURL=styles.css.map */
